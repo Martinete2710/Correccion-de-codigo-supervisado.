@@ -1,5 +1,5 @@
 Reyes Espino Juan Martin
-calificacion:
+calificacion: 8
 package CodigoOtros;
 
 import java.util.Scanner;

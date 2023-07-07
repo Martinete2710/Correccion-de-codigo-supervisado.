@@ -1,0 +1,56 @@
+Reyes Espino juan Martin.
+
+package org.generation.problemaMangosNaranjas;
+
+import java.util.Scanner;
+
+public class MangosNaranjas {
+
+Scanner scanner= new Scanner(System.in);	
+	public int Naranjas=0;
+	public int Mangos=0;
+	public int cajaMangos =0;
+	public int cajaNaranjas= 0;
+	public int caja=0;
+	
+	public MangosNaranjas(int naranjas, int mangos) {
+		super();
+		this.Naranjas = naranjas;
+		this.Mangos = mangos;
+		
+	}
+
+	public void imprimir( ) {
+		cajaMangos=124;
+		cajaNaranjas=124;
+		System.out.println("Cuantas Naranjas son?");
+		 Naranjas=scanner.nextInt();
+		System.out.println("Cuantos Mangos son?");
+		 Mangos=scanner.nextInt();
+		if( Mangos>= 0&&  Mangos<=124){
+			 cajaMangos= Mangos;
+			 System.out.println( "hay "+Mangos+"Mangos en : "+ cajaMangos+" cajas");
+		}else if(Mangos>=124) {
+			caja=Mangos/124;
+			cajaMangos=caja+cajaMangos;
+			System.out.println( "hay "+Mangos+"Mangos en : "+ cajaMangos+" cajas");
+		}else {
+			System.out.println("escribe un numero de mangos adecuado");
+			
+		}
+		
+		
+		if( Naranjas>= 0&&  Naranjas<=124){
+			 cajaNaranjas= Naranjas;
+			 System.out.println( "hay "+Naranjas+" Naranjas en : "+ cajaNaranjas+" cajas");
+		}else if(Naranjas>=124) {
+			caja=Naranjas/124;
+			cajaNaranjas=caja+cajaNaranjas;
+			System.out.println( "hay "+Naranjas+" Naranjas en : "+ cajaNaranjas+" cajas");
+		}else {
+			System.out.println("escribe un numero de Naranjas adecuado");
+		}
+	}
+	
+	
+}

@@ -1,0 +1,24 @@
+Reyes Espino juan Martin
+public class FizzBuzz {
+
+		public static void imprimirNumeros() {
+		
+		for(int num = 1; num <= 100; num++) {
+			
+			if (num % 3 == 0 || num % 5 == 0) {
+				System.out.println("El " + num + " es FizzBuzz"); 
+			}else if (num % 3 == 0) {
+				System.out.println("El " + "Fizz");
+			}else if (num % 5 == 0) {
+				System.out.println("Buzz");
+			}else {
+				System.out.println("Agrega un numero que sea multiplo de 3 o 5");
+				}
+			}
+		}
+		
+		public static void main(String[] args) {
+		 FizzBuzz.imprimirNumeros(); 
+		}
+
+	}
